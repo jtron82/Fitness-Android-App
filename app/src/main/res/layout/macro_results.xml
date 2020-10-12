@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fitness">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="19dp"
+        android:text="Calories Per Day:"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/totalcal"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="12dp"
+        android:text="Carbohydrate:"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_below="@+id/totalcarb"
+        android:layout_marginEnd="73dp"
+        android:layout_marginTop="15dp"
+        android:text="Protein:"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/totalfat"
+        android:layout_below="@+id/totalfat"
+        android:layout_marginTop="14dp"
+        android:text="Fat:"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalcal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/protein"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="14dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalcarb"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/protein"
+        android:layout_below="@+id/carbs"
+        android:layout_marginTop="14dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalprot"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/totalfat"
+        android:layout_below="@+id/fat"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalfat"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/protein"
+        android:layout_below="@+id/protein"
+        android:layout_marginTop="13dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
